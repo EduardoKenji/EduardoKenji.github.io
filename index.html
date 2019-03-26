@@ -1,7 +1,239 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<style>
+  .markdown-body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+  .container-lg {
+    display: block;
+    position: center;
+    box-sizing: border-box;
+    float: right;
+    width: 60%;
+    margin-right: auto;
+    margin-left: 245px;
+    padding-right: 16px !important;
+    padding-left: 10%;
+    margin-top: 32px !important;
+    margin-bottom: 32px !important;
+  }
+
+  .markdown-body h1 {
+    padding-bottom: 0.3em;
+    font-size: 2em;
+    font-weight: 600;
+    border-bottom: 1px solid #eaecef;
+  }
+
+  .markdown-body h2 {
+    padding-bottom: 0.2em;
+    font-size: 1.7em;
+    font-weight: 575;
+    border-bottom: 1px solid #eaecef;
+  }
+
+  .markdown-body h3 {
+    font-size: 1.4em;
+    font-weight: 550;
+  }
+
+
+  .sidebar {
+    position: absolute;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    float: left;
+    clear: both;
+    margin-bottom: 1em;
+    max-width: 200px;
+    margin-right: 1.6949152542%;
+    margin-left: 7%;
+    padding-top: 3%;
+    opacity: 0.85;
+    line-height: 1.3;
+  }
+
+  @media (max-width: 759px) {
+    .sidebar {
+      display: none;
+    }
+
+    .container-lg {
+      display: block;
+      position: center;
+      box-sizing: border-box;
+      float: right;
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 16px !important;
+      padding-left: 16px !important;
+      margin-top: 32px !important;
+      margin-bottom: 32px !important;
+    }
+  }
+  
+
+  .sticky {
+    position: fixed;
+    top: 2em;
+  }
+
+  .sidebar h1 {
+    font-size: 1.2em;
+    font-weight: 550;
+  }
+
+  .sidebar p {
+    font-size: 1em;
+  }
+
+  .sidebar img {
+    padding-left: 0px !important;
+    max-width: 70%;
+    padding-bottom: 1em;
+    padding-right: 0.8em;
+  }
+
+  .profile-photo img {
+    padding-left: 0px !important;
+    max-width: 60%;
+    padding-bottom: 1em;
+    padding-right: 0.8em;
+  }
+
+  .markdown-body img {
+    padding-left: 0px !important;
+    max-width: 70%;
+    padding-bottom: 1em;
+    padding-right: 0.8em;
+  }
+
+  .icon img {
+    width: 18px;
+    height: 17px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+  }
+
+  .medium-icon img {
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-bottom: 11px;
+  }
+
+  .small-line-height {
+    line-height: 2em;
+  }
+
+  .repo-image img {
+    padding-left: 0px !important;
+    max-width: 33%;
+    min-width: 160px;
+    padding-bottom: 1em;
+    padding-right: 0.8em;
+  }
+
+  .small-repo-image img {
+    padding-left: 0px !important;
+    max-width: 22%;
+    min-width: 110px;
+    padding-bottom: 1em;
+    padding-right: 0.8em;
+  }
+
+</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>Portfolio by Eduardo K. M. Koketu.</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Your awesome title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Your awesome title" />
+<script type="application/ld+json">
+{"@type":"WebSite","url":"http://localhost:4000/","name":"Your awesome title","headline":"Your awesome title","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="sidebar sticky">
+    <div class="profile-photo">
+      <img src = "pictures/my_photo_oval.jpg"></img>
+    </div>
+    <h1>Eduardo Kenji Missu Koketu</h1>
+    <p>I am a Information System (Bachelor of Science) student at Universidade de São Paulo.</p>
+    <div class="small-line-height">
+      <div class="icon">
+        <img src = "pictures/email_icon2.png"></img><a href="mailto:eduardo.koketu@gmail.com">Email</a>
+      </div>
+      <div class="icon">
+        <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji">GitHub</a>
+      </div>
+      <div class="icon">
+        <img src = "pictures/linkedin_icon.png"></img><a href="https://www.linkedin.com/in/eduardo-koketu-5b88a8152">Linkedin</a>
+      </div>
+    </div>
+  </div>
+  <div class="container-lg markdown-body">
+    <h1><a href="https://eduardokenji.github.io/">EduardoKenji.github.io</a></h1>
+    <h1>Portfolio by Eduardo K. M. Koketu</h1>
+    <p>This portfolio comprises stand-alone projects I have created or have worked on to study software engineering, data analysis, machine learning algorithms and game development.</p>
+    <h2>Snake game</h2>
+
+    <div class="medium-icon">
+      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/snake-game">GitHub repo</a>
+    </div>
+    <p>A simple Snake game in a 720x720 windows with a customizable map size. The game was developed with pygame modules. This project will probably be used as a testing environment for Machine Learning.</p>
+    <div class="repo-image">
+      <p>
+        <img src = "pictures/snake_game_alive.png"></img>
+        <img src = "pictures/snake_game_gameover.png"></img>
+      </p>
+    </div>
+
+    <h2>Classifying handwritten uppercase letters (Z, X and S) with Multilayer Perceptron</h2>
+    
+    <div class="medium-icon">
+      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/multilayer-perceptron">GitHub repo</a>
+    </div>
+    <p>This was a project developed for Artificial Intelligence classes during my Bachelor of Science in Information Systems in Universidade de São Paulo. A raw implementation of the Multilayer Perceptron, with one hidden layer and an output layer with 3 units, to correctly classify some handwritten uppercase letters (Z, X and S). The project was developed in Python and supported by scikit-image library. The image of a letter (.PNG format) is converted into a Histogram of Oriented Gradients (from scikit-image.feature.hog) and then used as input to the neural network. The neural network training is validated by the k-fold cross-validation procedure (1000 images, per letter, for the training set and 300 images, per letter, for the validating set). The variables names, modules names, classes names and comments are in Portuguese.</p>
+    <div class="small-repo-image">
+      <p>
+        <img src = "pictures/S_image.png"></img>
+        <img src = "pictures/X_image.png"></img>
+        <img src = "pictures/Z_image.png"></img>
+      </p>
+    </div>
+
+    <h2>Traffic simulator</h2>
+    
+    <div class="medium-icon">
+      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/traffic-simulator">GitHub repo</a>
+    </div>
+    <p>This was a project developed for Problem-Solving II classes during my Bachelor of Science in Information Systems in Universidade de São Paulo. The traffic simulator was developed with Java and the LibGDX framework.</p>
+    <div class="repo-image">
+      <p>
+        <img src = "pictures/traffic_simulator.png"></img>
+      </p>
+    </div>
+  </div>
 </body>
+
 </html>
