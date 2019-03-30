@@ -13,7 +13,7 @@
     position: center;
     box-sizing: border-box;
     float: right;
-    width: 60%;
+    width: 64%;
     margin-right: auto;
     margin-left: 245px;
     padding-right: 16px !important;
@@ -40,7 +40,6 @@
     font-size: 1.4em;
     font-weight: 550;
   }
-
 
   .sidebar {
     position: absolute;
@@ -110,7 +109,6 @@
 
   .markdown-body img {
     padding-left: 0px !important;
-    max-width: 70%;
     padding-bottom: 1em;
     padding-right: 0.8em;
   }
@@ -137,12 +135,21 @@
     line-height: 2em;
   }
 
+  .big-repo-image img {
+    padding-left: 0px !important;
+    max-width: 50%;
+    min-width: 240px;
+    padding-bottom: 1em;
+    padding-right: 0.8em;
+  }
+
   .repo-image img {
     padding-left: 0px !important;
     max-width: 33%;
     min-width: 160px;
     padding-bottom: 1em;
     padding-right: 0.8em;
+    display: inline-block;
   }
 
   .small-repo-image img {
@@ -163,6 +170,26 @@
     padding-bottom: 1em;
     padding-right: 0.8em;
   }
+
+
+  .two-gifs-side-by-side figure {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 155px;
+    max-width: 18%;
+  }
+
+  figure figcaption {
+    text-align: center;
+  }
+
+  .one-gif-big figure {
+    min-width: 300px;
+    max-width: 50%;
+  }
+
 </style>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -209,20 +236,39 @@
     <h1><a href="https://eduardokenji.github.io/">EduardoKenji.github.io</a></h1>
     <h1>Portfolio by Eduardo K. M. Koketu</h1>
     <p>This portfolio comprises stand-alone projects I have created or have worked on to study software engineering, data analysis, machine learning algorithms and game development.</p>
-    <h2>Snake game</h2>
+    
+    <h2>Q-learning to solve mazes</h2>
 
+    <div class="medium-icon">
+      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/q-learning-maze-solver">GitHub repo</a>
+    </div>
+    <p>A visual representation, in a 720x720 windows, of a q-learning algorithm (a model-free reinforcement learning) solving mazes. The project is being developed with Python and pygame modules. Q-learning is also an unsupervised training algorithm and therefore it does not use examples, previously labeled data or previously known references.</p>
+    <ul>
+      <li>The agent is represented by a yellow square</li>
+      <li>The goal/target map position is represented by a pink square</li>
+      <li>The agent's goal consists in reaching the goal/target map position by walking through the maze</li>
+    </ul>
+    <div class ="two-gifs-side-by-side">  
+      <figure><img src = "pictures/q_learning_untrained.GIF"></img><figcaption>Untrained agent: As the Q matrix is filled with 0's and the exploration chance is high, most of the agent's decisions will be mostly random as it has no knowledge.</figcaption></figure>
+      <figure><img src = "pictures/q_learning_trained.GIF"></img><figcaption>Trained agent: As the Q matrix is complete and the exploration chance is very low or simply 0%, the agent will pratically always know how to reach the goal/target map position. </figcaption></figure>
+      <figure><img src = "pictures/q_learning_map.PNG"></img><figcaption>The map is built from a map text file. The first line has two values, the values represents the map height and the map width, respectively.</figcaption></figure>
+    </div>
+    <div class="one-gif-big">
+      <figure><img src = "pictures/q_learning_training.GIF"></img><figcaption>Q-learning training: As the training goes on, the agent is learning, this learning is represented by the Q matrix being filled.</figcaption></figure>
+    </div>
+
+
+    <h2>Snake game</h2>
+    
     <div class="medium-icon">
       <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/snake-game">GitHub repo</a>
     </div>
     <p>A simple snake game in a 720x720 windows with a customizable map size. The game was developed with Python and pygame modules. This project will probably be used as a testing environment for Machine Learning.</p>
-    <div class="repo-image">
-      <p>
-        <img src = "pictures/snake_game_alive.PNG"></img>
-        <img src = "pictures/snake_game_gameover.PNG"></img>
-      </p>
+    <div class="one-gif-big">
+      <figure><img src = "pictures/snake_game.GIF"></img><figcaption>Snake game gameplay</figcaption></figure>
     </div>
 
-    <h2>Classifying handwritten uppercase letters (Z, X and S) with Multilayer Perceptron</h2>
+    <h2>[Old] Classifying handwritten uppercase letters (Z, X and S) with Multilayer Perceptron</h2>
     
     <div class="medium-icon">
       <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/multilayer-perceptron">GitHub repo</a>
@@ -236,7 +282,7 @@
       </p>
     </div>
 
-    <h2>Traffic simulator</h2>
+    <h2>[Old] Traffic simulator</h2>
     
     <div class="medium-icon">
       <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/traffic-simulator">GitHub repo</a>
@@ -249,6 +295,7 @@
     </div>
 
     <h2>Misc/Extra</h2>
+    
     <h3>Some pictures from my learning experience in 3D modeling with Blender:</h3>
     <div class="small-repo-image">
       <p>
