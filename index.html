@@ -184,8 +184,7 @@
   }
 
   .one-gif-big figure {
-    min-width: 300px;
-    max-width: 50%;
+    width: 390px;
   }
 
 </style>
@@ -217,16 +216,16 @@
     <p>I am an Information Systems (Bachelor of Science) student at Universidade de São Paulo. I am expecting the graduation date to be December 2019.</p>
     <div class="small-line-height">
       <div class="icon">
-        <img src = "pictures/email_icon2.png"></img><a href="mailto:eduardo.koketu@gmail.com">Email</a>
+        <img src = "pictures/email_icon2.png"></img><a href="mailto:eduardo.koketu@gmail.com" target ="_blank">Email</a>
       </div>
       <div class="icon">
-        <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji">GitHub</a>
+        <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji" target ="_blank">GitHub</a>
       </div>
       <div class="icon">
-        <img src = "pictures/linkedin_icon.png"></img><a href="https://www.linkedin.com/in/eduardo-koketu-5b88a8152">Linkedin</a>
+        <img src = "pictures/linkedin_icon.png"></img><a href="https://www.linkedin.com/in/eduardo-koketu-5b88a8152" target ="_blank">Linkedin</a>
       </div>
       <div class="icon">
-        <img src = "pictures/hackerrank_icon.png"></img><a href="https://www.hackerrank.com/eduardo_koketu">HackerRank</a>
+        <img src = "pictures/hackerrank_icon.png"></img><a href="https://www.hackerrank.com/eduardo_koketu" target ="_blank">HackerRank</a>
       </div>
     </div>
   </div>
@@ -235,10 +234,10 @@
     <h1>Portfolio by Eduardo K. M. Koketu</h1>
     <p>This portfolio comprises stand-alone projects I have created or have worked on to study software engineering, data analysis, machine learning algorithms and game development.</p>
     
-    <h2>Q-learning to solve mazes</h2>
+    <h2>Using q-learning to solve mazes</h2>
 
     <div class="medium-icon">
-      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/q-learning-maze-solver">GitHub repo</a>
+      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/q-learning-maze-solver" target ="_blank">GitHub repo</a>
     </div>
     <p>A visual representation, in a 720x720 windows, of a q-learning algorithm (a model-free reinforcement learning) solving mazes. The project is being developed with Python and pygame modules. Q-learning is also an unsupervised training algorithm and therefore it does not use examples, previously labeled data or previously known references.</p>
     <ul>
@@ -255,10 +254,25 @@
     </div>
 
 
-    <h2>Snake game</h2>
+    <h2>The perceptron learns to separate two distinct sets of data</h2>
+
+    <div class="medium-icon">
+      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/perceptron-linear-solver" target ="_blank">GitHub repo</a>
+    </div>
+    <p>A visual representation of a perceptron being trained to linearly separate two distinct groups of points on a 2D plane. The project is being developed with Java and LibGDX framework.</p>
+    <ul>
+      <li>White and black circles can be placed in the map by dragging from the generators in the left of the map. Their coordinates x and y (between -1 and 1) will be used as input for the perceptron.</li>
+      <li>The perceptron starts with randomized weights and bias (between -1 and 1).</li>
+      <li>The learning rate starts at 0.7 and decreases with each iteration.</li>
+    </ul>
+    <div class="one-gif-big">
+      <figure><img src = "pictures/perceptron_training.gif"></img><figcaption>Snake game gameplay</figcaption></figure>
+    </div>
+
+    <h2>A snake game</h2>
     
     <div class="medium-icon">
-      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/snake-game">GitHub repo</a>
+      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/snake-game" target ="_blank">GitHub repo</a>
     </div>
     <p>A simple snake game in a 720x720 windows with a customizable map size. The game was developed with Python and pygame modules. This project will probably be used as a testing environment for Machine Learning.</p>
     <div class="one-gif-big">
@@ -268,7 +282,7 @@
     <h2>[Old] Classifying handwritten uppercase letters (Z, X and S) with Multilayer Perceptron</h2>
     
     <div class="medium-icon">
-      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/multilayer-perceptron">GitHub repo</a>
+      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/multilayer-perceptron" target ="_blank">GitHub repo</a>
     </div>
     <p>This was a project developed for Artificial Intelligence classes during my Bachelor of Science in Information Systems at Universidade de São Paulo. A raw implementation of the Multilayer Perceptron, with one hidden layer and an output layer with 3 units, to correctly classify some handwritten uppercase letters (Z, X and S). The project was developed in Python and supported by scikit-image library. The image of a letter (.PNG format) is converted into a Histogram of Oriented Gradients (from scikit-image.feature.hog) and then used as input to the neural network. The neural network training is validated by the k-fold cross-validation procedure (1000 images, per letter, for the training set and 300 images, per letter, for the validating set). The variables names, modules names, classes names and comments are in Portuguese.</p>
     <div class="small-repo-image">
@@ -282,7 +296,7 @@
     <h2>[Old] Traffic simulator</h2>
     
     <div class="medium-icon">
-      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/traffic-simulator">GitHub repo</a>
+      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/traffic-simulator" target ="_blank">GitHub repo</a>
     </div>
     <p>This was a project developed for Problem-Solving II classes during my Bachelor of Science in Information Systems at Universidade de São Paulo. The traffic simulator was developed with Java and the LibGDX framework.</p>
     <div class="repo-image">
