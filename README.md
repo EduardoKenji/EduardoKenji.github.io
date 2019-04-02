@@ -7,7 +7,7 @@ This portfolio comprises stand-alone projects I have created or have worked on t
 My current projects: 
 
 * [Q-learning application to solve mazes in Python](https://github.com/EduardoKenji/q-learning-maze-solver)
-* [A perceptron learns to separate two distinct sets of data in Java + LibGDX framework](https://github.com/EduardoKenji/snake-game)
+* [A perceptron learns to separate two distinct sets of data in Java + LibGDX framework](https://github.com/EduardoKenji/perceptron-linear-solver)
 * [Currently, a simple snake game in Python](https://github.com/EduardoKenji/snake-game)
 
 My old/archived projects:
