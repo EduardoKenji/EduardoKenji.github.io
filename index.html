@@ -137,16 +137,14 @@
 
   .big-repo-image img {
     padding-left: 0px !important;
-    max-width: 50%;
-    min-width: 240px;
+    width: 340px;
     padding-bottom: 1em;
     padding-right: 0.8em;
   }
 
   .repo-image img {
     padding-left: 0px !important;
-    max-width: 33%;
-    min-width: 160px;
+    width: 100px;
     padding-bottom: 1em;
     padding-right: 0.8em;
     display: inline-block;
@@ -184,7 +182,7 @@
   }
 
   .one-gif-big figure {
-    width: 390px;
+    width: 360px;
   }
 
 </style>
@@ -279,25 +277,28 @@
       <figure><img src = "pictures/snake_game.gif"></img><figcaption>Snake game gameplay</figcaption></figure>
     </div>
 
-    <h2>[Old] Classifying handwritten uppercase letters (Z, X and S) with Multilayer Perceptron</h2>
+    <h2>Classifying handwritten uppercase letters (Z, X and S) with Multilayer Perceptron</h2>
     
     <div class="medium-icon">
       <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/multilayer-perceptron" target ="_blank">GitHub repo</a>
     </div>
-    <p>This was a project developed for Artificial Intelligence classes during my Bachelor of Science in Information Systems at Universidade de São Paulo.</p>
+    <p>This was a project developed for Artificial Intelligence classes during my Bachelor of Science in Information Systems at Universidade de São Paulo. My own implementation of the Multilayer Perceptron, with one hidden layer and an output layer with 3 units, to correctly classify some handwritten uppercase letters (Z, X and S).</p>
     <ul>
-      <li>A raw implementation of the Multilayer Perceptron, with one hidden layer and an output layer with 3 units, to correctly classify some handwritten uppercase letters (Z, X and S).</li>
-      <li>The project was developed in Python and supported by scikit-image library.</li>
-      <li>The image of a letter (.PNG format) is converted into a Histogram of Oriented Gradients (from scikit-image.feature.hog) and then used as input to the neural network.</li>
-      <li>The neural network training is validated by the k-fold cross-validation procedure (1000 images, per letter, for the training set and 300 images, per letter, for the validating set).</li>
-      <li>The variables names, modules names, classes names and comments are currently in Portuguese.</li>
+      <li>My own implementation of the Multilayer Perceptron. Currently with 576 input units, one hidden layer (15 neurons) and an output layer (3 units), to correctly classify the handwritten uppercase letters: Z, X and S.</li>
+      <li>The learning rate was defaulted to 0.1, and the weights and bias are randomized between -0.5 and 0.5.</li>
+      <li>The project was developed in Python.</li>
+      <li>(Outside the commited project) The image of a letter (.PNG format from /unprocessed_images/) was converted into a Histogram of Oriented Gradients (from scikit-image.feature.hog).</li>
+      <li>The neural network has 800 images, per letter, for the training set and 200 images, per letter, for the validating set.</li>
     </ul>
-    <div class="small-repo-image">
+    <div class="repo-image">
       <p>
         <img src = "pictures/S_image.png"></img>
         <img src = "pictures/X_image.png"></img>
         <img src = "pictures/Z_image.png"></img>
       </p>
+    </div>
+    <div class="big-repo-image">
+      <img src = "pictures/multilayer_perceptron.PNG"></img>
     </div>
 
     <h2>[Old] Traffic simulator</h2>
@@ -306,7 +307,7 @@
       <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/traffic-simulator" target ="_blank">GitHub repo</a>
     </div>
     <p>This was a project developed for Problem-Solving II classes during my Bachelor of Science in Information Systems at Universidade de São Paulo. The traffic simulator was developed with Java and the LibGDX framework.</p>
-    <div class="repo-image">
+    <div class="big-repo-image">
       <p>
         <img src = "pictures/traffic_simulator.PNG"></img>
       </p>
