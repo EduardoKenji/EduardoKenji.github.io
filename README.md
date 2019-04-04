@@ -9,8 +9,11 @@ My current projects:
 * [Q-learning application to solve mazes in Python](https://github.com/EduardoKenji/q-learning-maze-solver)
 * [A perceptron learns to separate two distinct sets of data in Java + LibGDX framework](https://github.com/EduardoKenji/perceptron-linear-solver)
 * [Currently, a simple snake game in Python](https://github.com/EduardoKenji/snake-game)
-* [My own implementation of a multilayer perceptron to classify processed handwritten letters (S, X and Z) in Python](https://github.com/EduardoKenji/multilayer-perceptron)
+* [My own implementation of a Multilayer Perceptron in Python with NumPy arrays](https://github.com/EduardoKenji/multilayer-perceptron-numpy-array)
+
 
 My old/archived projects:
 
+* [My own implementation of a multilayer perceptron to classify processed handwritten letters (S, X and Z) in Python](https://github.com/EduardoKenji/multilayer-perceptron)
 * [A traffic-simulator in Java](https://github.com/EduardoKenji/traffic-simulator)
+
