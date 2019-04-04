@@ -14,6 +14,6 @@ My current projects:
 
 My old/archived projects:
 
-* [My own implementation of a multilayer perceptron to classify processed handwritten letters (S, X and Z) in Python](https://github.com/EduardoKenji/multilayer-perceptron)
-* [A traffic-simulator in Java](https://github.com/EduardoKenji/traffic-simulator)
+* [My own implementation of a Multilayer Perceptron to classify processed handwritten letters (S, X and Z) in Python](https://github.com/EduardoKenji/multilayer-perceptron)
+* [A traffic simulator in Java](https://github.com/EduardoKenji/traffic-simulator)
 
