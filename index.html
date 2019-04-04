@@ -125,10 +125,11 @@
   .medium-icon img {
     width: 25px;
     height: 25px;
+    margin-left: 20px;
     padding-left: 5px;
     padding-top: 5px;
     padding-right: 8px;
-    padding-bottom: 11px;
+    padding-bottom: 13px;
   }
 
   .small-line-height {
@@ -280,15 +281,19 @@
     <h2>Classifying handwritten uppercase letters (Z, X and S) with Multilayer Perceptron</h2>
     
     <div class="medium-icon">
-      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/multilayer-perceptron" target ="_blank">GitHub repo</a>
+      <img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/multilayer-perceptron" target ="_blank">(Python lists implementation) GitHub repo</a>
+      
     </div>
-    <p>This was a project developed for Artificial Intelligence classes during my Bachelor of Science in Information Systems at Universidade de São Paulo. My own implementation of the Multilayer Perceptron, with one hidden layer and an output layer with 3 units, to correctly classify some handwritten uppercase letters (Z, X and S).</p>
+    <div class="medium-icon">
+    	<img src = "pictures/github_icon.png"></img><a href="https://github.com/EduardoKenji/multilayer-perceptron-numpy-array" target ="_blank">(NumPy arrays implementation) GitHub repo</a>
+	</div>
+    <p>The Python lists implementation was originally a project developed for Artificial Intelligence classes during my Bachelor of Science in Information Systems at Universidade de São Paulo. Recently, I have developed a NumPy arrays implementation that is about 50 times faster than the Python lists one. </p>
+    <p>Both implementation have: </p>
     <ul>
-      <li>My own implementation of the Multilayer Perceptron. Currently with 576 input units, one hidden layer (15 neurons) and an output layer (3 units), to correctly classify the handwritten uppercase letters: Z, X and S.</li>
-      <li>The learning rate was defaulted to 0.1, and the weights and bias are randomized between -0.5 and 0.5.</li>
-      <li>The project was developed in Python.</li>
+      <li>The network units are 576 input units, 15 hidden layer neurons and 3 output units.</li>
+      <li>The learning rate was defaulted to 0.1, the current number of training epochs is 10, and the weights and bias, in all layers, are randomized between -0.5 and 0.5.</li>
       <li>(Outside the commited project) The image of a letter (.PNG format from /unprocessed_images/) was converted into a Histogram of Oriented Gradients (from scikit-image.feature.hog).</li>
-      <li>The neural network has 800 images, per letter, for the training set and 200 images, per letter, for the validating set.</li>
+      <li>2400 images (800 per letter) in the training set and 600 images (200 per letter) in the validating set.</li>
     </ul>
     <div class="repo-image">
       <p>
@@ -297,9 +302,20 @@
         <img src = "pictures/Z_image.png"></img>
       </p>
     </div>
+    <p>Comparison between the NumPy arrays implementation and the Python lists implementation:</p>
+    <ul>
+    <li>The NumPy arrays implementation has similar accuracy.
+    <li>However, the NumPy arrays implementation is hugely faster.
+	</ul>
+    The Python lists implementation training and validations: </p>
     <div class="big-repo-image">
-      <img src = "pictures/multilayer_perceptron.PNG"></img>
+      <img src = "pictures/list_multilayer_perceptron.PNG"></img>
     </div>
+    <p>The NumPy arrays implementation training and validations: </p>
+    <div class="big-repo-image">
+      <img src = "pictures/np_multilayer_perceptron.PNG"></img>
+    </div>
+    <p>The NumPy arrays implementation is almost 50 times faster than the Python lists implementation (0.4 seconds per epoch vs 18~19 seconds per epoch). The NumPy arrays implementation optimizes the feedforward and the backpropagation.</p>
 
     <h2>[Old] Traffic simulator</h2>
     
